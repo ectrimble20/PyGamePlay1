@@ -97,3 +97,29 @@ class TileMap(object):
         if 0 < x - 1 < self._w and 0 < y < self._h and self.tile_at(x-1, y).tile_type == tile_type:
             t |= 1
         return t
+
+"""
+Logicish beind this mapping using bit OR combines
+10000000 = 128
+01000000 = 64
+00100000 = 32
+00010000 = 16
+00001000 = 8
+00000100 = 4
+00000010 = 2
+00000001 = 1
+
+First Row
+00010100 = air-grass-1 - 20
+00010010 = grass-slope-1 - 18
+00010001 = grass-no-slope, also applies to 00000001 and 00010000 - 17, 16, 1
+00001001 = grass-slope-2 - 9
+00000101 = air-grass-2 - 5
+
+Second Row
+00100000 = grass-slope-3, also applies to 00100010 - 32, 34
+empty
+dirt
+empty
+10000000 = grass-slope-4, also applies to 10001000 - 128, 136
+"""
