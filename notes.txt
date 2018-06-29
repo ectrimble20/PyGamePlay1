@@ -1,0 +1,6 @@
+Alright, need to note thing to keep them strait in my head.
+
+1 - Managers are managers, NOT loaders.  Managers are fetch and store processors
+2 - Loaders are loaders, not managers.  Managers and loaders should be separate.
+3 - Thing to note is that the loader might not be able to properly store things in a manager if it's a reference.  If it
+is a ref, it will be lost which will be BAD.

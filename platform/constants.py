@@ -1,0 +1,29 @@
+import os
+
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+
+RESOURCE_DIRECTORY = "resources"
+DATA_DIRECTORY = os.path.join(RESOURCE_DIRECTORY, "data")
+FONT_DIRECTORY = os.path.join(RESOURCE_DIRECTORY, "fonts")
+IMAGE_DIRECTORY = os.path.join(RESOURCE_DIRECTORY, "images")
+JSON_DIRECTORY = os.path.join(RESOURCE_DIRECTORY, "json")
+SPRITE_SHEET_DIRECTORY = os.path.join(IMAGE_DIRECTORY, "sprite_sheets")
+IMAGE_DATA_FILE = os.path.join(JSON_DIRECTORY, "image_data.json")
+CONFIGURATION_FILE = os.path.join(JSON_DIRECTORY, "config.json")
+
+FONT_TREBUCHET = os.path.join(FONT_DIRECTORY, "trebuc.ttf")
+FONT_TREBUCHET_BOLD = os.path.join(FONT_DIRECTORY, "trebucbd.ttf")
+FONT_TREBUCHET_ITALIC = os.path.join(FONT_DIRECTORY, "trebucit.ttf")
+FONT_TREBUCHET_BOLD_ITALIC = os.path.join(FONT_DIRECTORY, "trebucbi.ttf")
+
+FONT_LUCIDA_CONSOLE = os.path.join(FONT_DIRECTORY, "lucon.ttf")
+FONT_LUCIDA_SANS = os.path.join(FONT_DIRECTORY, "lucon_sans.ttf")
+
+FONT_SIZE_TINY = 12
+FONT_SIZE_SMALL = 18
+FONT_SIZE_MEDIUM = 24
+FONT_SIZE_LARGER = 36
+FONT_SIZE_VERY_LARGE = 48
+FONT_SIZE_HUGE = 60
+FONT_SIZE_GIGANTIC = 72
